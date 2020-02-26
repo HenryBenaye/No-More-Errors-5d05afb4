@@ -42,7 +42,7 @@ try{
             $times =  floor($heleEuros / $euro);
             echo '$times X $euro' .'euro'. PHP_EOL;
             $heleEuros = $heleEuros - ($times * $euro);
-        }
+    }
         }
 
     foreach ($CENTEN as $cent => $type2) {
