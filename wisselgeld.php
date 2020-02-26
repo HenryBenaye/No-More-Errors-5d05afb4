@@ -13,21 +13,23 @@ try{
 
     $change = (float)$argv[1];
 
-    $EUROS  = 
-        [50 => "euro", 
+    $EUROS  = [
+        50 => "euro", 
         20 => "euro", 
         10 => "euro", 
         5 => "euro", 
         2 => "euro", 
-        1 => "euro"];
+        1 => "euro"
+    ];
 
-    $CENTEN  =
-        [50 => "cent", 
+    $CENTEN  = [
+        50 => "cent", 
         20 => "cent",
         10 => "cent", 
         5 => "cent", 
         2 => "cent", 
-        1 => "cent"];
+        1 => "cent"
+    ];
 
         $change = (round($change / 0.05, 0)) * 0.05;
         $heleEuros = floor($change);
@@ -37,8 +39,8 @@ try{
     
             $heleEuros = round($heleEuros, 2);
         if(floor($heleEuros / $euro) > 0) {
-                $times =  floor($heleEuros / $euro);
-                echo '$times X $euro' .'euro'. PHP_EOL;
+            $times =  floor($heleEuros / $euro);
+            echo '$times X $euro' .'euro'. PHP_EOL;
             $heleEuros = $heleEuros - ($times * $euro);
         }
         }
